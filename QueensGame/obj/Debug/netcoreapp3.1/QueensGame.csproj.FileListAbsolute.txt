@@ -1,0 +1,13 @@
+D:\Users\Vincent Bellemare\Desktop\WorkSpace\QueensGame\QueensGame\obj\Debug\netcoreapp3.1\QueensGame.csprojAssemblyReference.cache
+D:\Users\Vincent Bellemare\Desktop\WorkSpace\QueensGame\QueensGame\obj\Debug\netcoreapp3.1\QueensGame.AssemblyInfoInputs.cache
+D:\Users\Vincent Bellemare\Desktop\WorkSpace\QueensGame\QueensGame\obj\Debug\netcoreapp3.1\QueensGame.AssemblyInfo.cs
+D:\Users\Vincent Bellemare\Desktop\WorkSpace\QueensGame\QueensGame\obj\Debug\netcoreapp3.1\QueensGame.csproj.CoreCompileInputs.cache
+D:\Users\Vincent Bellemare\Desktop\WorkSpace\QueensGame\QueensGame\bin\Debug\netcoreapp3.1\QueensGame.exe
+D:\Users\Vincent Bellemare\Desktop\WorkSpace\QueensGame\QueensGame\bin\Debug\netcoreapp3.1\QueensGame.deps.json
+D:\Users\Vincent Bellemare\Desktop\WorkSpace\QueensGame\QueensGame\bin\Debug\netcoreapp3.1\QueensGame.runtimeconfig.json
+D:\Users\Vincent Bellemare\Desktop\WorkSpace\QueensGame\QueensGame\bin\Debug\netcoreapp3.1\QueensGame.runtimeconfig.dev.json
+D:\Users\Vincent Bellemare\Desktop\WorkSpace\QueensGame\QueensGame\bin\Debug\netcoreapp3.1\QueensGame.dll
+D:\Users\Vincent Bellemare\Desktop\WorkSpace\QueensGame\QueensGame\bin\Debug\netcoreapp3.1\QueensGame.pdb
+D:\Users\Vincent Bellemare\Desktop\WorkSpace\QueensGame\QueensGame\obj\Debug\netcoreapp3.1\QueensGame.dll
+D:\Users\Vincent Bellemare\Desktop\WorkSpace\QueensGame\QueensGame\obj\Debug\netcoreapp3.1\QueensGame.pdb
+D:\Users\Vincent Bellemare\Desktop\WorkSpace\QueensGame\QueensGame\obj\Debug\netcoreapp3.1\QueensGame.genruntimeconfig.cache
