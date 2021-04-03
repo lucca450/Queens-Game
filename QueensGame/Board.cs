@@ -9,6 +9,9 @@ namespace QueensGame
     {
         public int[,] data;
         private int size;
+        public List<int[]> solutions = new List<int[]>();
+        public List<int> solution = new List<int>();
+        private bool finished = false;
 
         public Board(int size)
         {
@@ -25,56 +28,54 @@ namespace QueensGame
 
         private bool PositionAvailable(int i, int j)
         {
-            if (!VerifyUpLine(i, j - 1)) { return false; }
-            if (!VerifyUpRightLine(i+1, j-1)) { return false; }
-            if (!VerifyRightLine(i+1, j)) { return false; }
-            if (!VerifyDownRightLine(i+1, j+1)) { return false; }
-            if (!VerifyDownLine(i, j+1)) { return false; }
-            if (!VerifyDownLeftLine(i-1, j+1)) { return false; }
-            if (!VerifyLeftLine(i-1, j)) { return false; }
-            if (!VerifyUpLeftLine(i-1, j-1)) { return false; }
+            if (!VerifyDownRightLine(i,j)) { return false; }
+            if (!VerifyDownLeftLine(i,j)) { return false; }
+            if (!VerifyUpRightLine(i,j)) { return false; }
+            if (!VerifyUpLeftLine(i,j)) { return false; }
 
             return true;
         }
-
-        public List<int[,]> FindQueensLocations(bool allSolutions)
+        public void FindQueensLocations(bool allSolutions)
         {
-            List<int[,]> solutions = new List<int[,]>();
-
-            for (int i = 0; i < size; i++)
+            InitializeData();
+            FindQueensLocations(0, allSolutions);
+        }
+        private void FindQueensLocations(int row, bool allSolutions)
+        {
+            if (!finished)
             {
-                InitializeData();
-
-                List<Point> queensPositions = new List<Point>();
-
-                data[0, i] = 1;
-                queensPositions.Add(new Point(0, i));
-
-                Point lastPoint = new Point(0, i);
-                Point nextLocation;
-                while (queensPositions.Count < size)
+                for (int col = 0; col < size; col++)
                 {
-                    nextLocation = new Point(lastPoint.X + 1, lastPoint.Y + 2);
-                    MakeCoordinatesSure(ref nextLocation);
+                
+                    if (PositionAvailable(row, col) && !solution.Contains(col + 1))
+                    {
+                        solution.Add(col + 1);
+                        data[row, col] = 1;
 
-                    if (PositionAvailable(nextLocation.X, nextLocation.Y))
-                    {
-                        queensPositions.Add(nextLocation);
-                        data[nextLocation.X, nextLocation.Y] = 1;
-                        lastPoint = nextLocation;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Error with location");
+                        if (solution.Count == size)
+                        {
+                            int[] solution_arr = new int[solution.Count];
+                            solution.CopyTo(solution_arr);
+                            solutions.Add(solution_arr);
+
+                            if (!allSolutions)
+                                finished = true;
+                        }
+                        else
+                            FindQueensLocations(row + 1, allSolutions);
+
+                        if (!finished)
+                        {
+                            if (solution.Count > 0)
+                                solution.RemoveAt(solution.Count - 1);      // Cul de sac
+
+                            data[row, col] = 0;
+                        }
                     }
                 }
-
-                solutions.Add(data);
-                if (!allSolutions)
-                    i = size;
             }
+            
 
-            return solutions;
         }
 
         private void MakeCoordinatesSure(ref Point nextLocation)
@@ -173,10 +174,11 @@ namespace QueensGame
             if (i < data.GetLength(0) && i >= 0 && j < data.GetLength(1) && j >= 0)
             {
                 if (VerifyCell(i, j))
-                    return VerifyUpLeftLine(i-1, j-1);
+                    return VerifyUpLeftLine(i - 1, j - 1);
                 else
                     return false;
-            }else
+            }
+            else
                 return true;
         }
 

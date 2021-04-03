@@ -29,24 +29,48 @@ namespace QueensGame
                 
             Board b = new Board(size);
 
-            List<int[,]> solutions = b.FindQueensLocations(allSolution);
+            b.FindQueensLocations(allSolution);
 
-            foreach(int[,] solution in solutions)
+            int k = 0;
+            foreach(int[] solution in b.solutions)
             {
-                Console.WriteLine("Solution " + (solutions.IndexOf(solution) + 1));
-                for (int i = 0; i < size; i++)
+                k++;
+                Console.WriteLine("Solution " + k);
+                foreach (int row in solution)
                 {
-                    for (int j = 0; j < size; j++)
-                        Console.Write(solution[i, j] + " ");
+                    Console.Write(row + " ");
+                }
+                Console.WriteLine("\n");
+
+                for(int i = 0; i < solution.Length; i++)
+                {
+                    for (int j = 0; j < solution.Length; j++)
+                    {
+                        if (j+1 == solution[i])
+                            Console.Write("1 ");
+                        else
+                            Console.Write("0 ");
+                    }
                     Console.WriteLine();
                 }
-                Console.WriteLine();
+
+                Console.WriteLine("\n");
             }
 
             Console.ReadLine();
 
 
 
+        }
+
+        private static bool ArrayHasValue(int[] array, int value)
+        {
+            foreach(int arrayValue in array)
+            {
+                if (arrayValue == value)
+                    return true;
+            }
+            return false;
         }
     }
 }

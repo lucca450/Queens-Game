@@ -11,3 +11,16 @@ D:\Users\Vincent Bellemare\Desktop\WorkSpace\QueensGame\QueensGame\bin\Debug\net
 D:\Users\Vincent Bellemare\Desktop\WorkSpace\QueensGame\QueensGame\obj\Debug\netcoreapp3.1\QueensGame.dll
 D:\Users\Vincent Bellemare\Desktop\WorkSpace\QueensGame\QueensGame\obj\Debug\netcoreapp3.1\QueensGame.pdb
 D:\Users\Vincent Bellemare\Desktop\WorkSpace\QueensGame\QueensGame\obj\Debug\netcoreapp3.1\QueensGame.genruntimeconfig.cache
+C:\Users\vince\OneDrive\Bureau\Workspace\QueensGame\Queens-Game\QueensGame\bin\Debug\netcoreapp3.1\QueensGame.exe
+C:\Users\vince\OneDrive\Bureau\Workspace\QueensGame\Queens-Game\QueensGame\bin\Debug\netcoreapp3.1\QueensGame.deps.json
+C:\Users\vince\OneDrive\Bureau\Workspace\QueensGame\Queens-Game\QueensGame\bin\Debug\netcoreapp3.1\QueensGame.runtimeconfig.json
+C:\Users\vince\OneDrive\Bureau\Workspace\QueensGame\Queens-Game\QueensGame\bin\Debug\netcoreapp3.1\QueensGame.runtimeconfig.dev.json
+C:\Users\vince\OneDrive\Bureau\Workspace\QueensGame\Queens-Game\QueensGame\bin\Debug\netcoreapp3.1\QueensGame.dll
+C:\Users\vince\OneDrive\Bureau\Workspace\QueensGame\Queens-Game\QueensGame\bin\Debug\netcoreapp3.1\QueensGame.pdb
+C:\Users\vince\OneDrive\Bureau\Workspace\QueensGame\Queens-Game\QueensGame\obj\Debug\netcoreapp3.1\QueensGame.csprojAssemblyReference.cache
+C:\Users\vince\OneDrive\Bureau\Workspace\QueensGame\Queens-Game\QueensGame\obj\Debug\netcoreapp3.1\QueensGame.AssemblyInfoInputs.cache
+C:\Users\vince\OneDrive\Bureau\Workspace\QueensGame\Queens-Game\QueensGame\obj\Debug\netcoreapp3.1\QueensGame.AssemblyInfo.cs
+C:\Users\vince\OneDrive\Bureau\Workspace\QueensGame\Queens-Game\QueensGame\obj\Debug\netcoreapp3.1\QueensGame.csproj.CoreCompileInputs.cache
+C:\Users\vince\OneDrive\Bureau\Workspace\QueensGame\Queens-Game\QueensGame\obj\Debug\netcoreapp3.1\QueensGame.dll
+C:\Users\vince\OneDrive\Bureau\Workspace\QueensGame\Queens-Game\QueensGame\obj\Debug\netcoreapp3.1\QueensGame.pdb
+C:\Users\vince\OneDrive\Bureau\Workspace\QueensGame\Queens-Game\QueensGame\obj\Debug\netcoreapp3.1\QueensGame.genruntimeconfig.cache
