@@ -1,21 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.Text;
 
 namespace QueensGame
 {
     class Board
     {
-        public int[,] data;
-        private int size;
-        public List<int[]> solutions = new List<int[]>();
-        public List<int> solution = new List<int>();
-        private bool finished = false;
+        private int[,] data;
+        private byte size;
+        public List<int[]> solutions { get; }
+        public List<int> solution { get; }
+        private bool finished;
 
-        public Board(int size)
+        public Board(byte size)
         {
             this.size = size;
+            solutions = new List<int[]>();
+            solution = new List<int>();
+            finished = false;
         }
 
         public void InitializeData()
@@ -28,25 +30,27 @@ namespace QueensGame
 
         private bool PositionAvailable(int i, int j)
         {
-            if (!VerifyDownRightLine(i,j)) { return false; }
-            if (!VerifyDownLeftLine(i,j)) { return false; }
-            if (!VerifyUpRightLine(i,j)) { return false; }
-            if (!VerifyUpLeftLine(i,j)) { return false; }
+            if (!VerifyDownRightLine(i, j)) { return false; }
+            if (!VerifyDownLeftLine(i, j)) { return false; }
+            if (!VerifyUpRightLine(i, j)) { return false; }
+            if (!VerifyUpLeftLine(i, j)) { return false; }
 
             return true;
         }
+
         public void FindQueensLocations(bool allSolutions)
         {
             InitializeData();
             FindQueensLocations(0, allSolutions);
         }
+
         private void FindQueensLocations(int row, bool allSolutions)
         {
             if (!finished)
             {
                 for (int col = 0; col < size; col++)
                 {
-                
+
                     if (PositionAvailable(row, col) && !solution.Contains(col + 1))
                     {
                         solution.Add(col + 1);
@@ -67,25 +71,23 @@ namespace QueensGame
                         if (!finished)
                         {
                             if (solution.Count > 0)
-                                solution.RemoveAt(solution.Count - 1);      // Cul de sac
+                                solution.RemoveAt(solution.Count - 1); // Cul de sac
 
                             data[row, col] = 0;
                         }
                     }
                 }
             }
-            
-
         }
 
         private void MakeCoordinatesSure(ref Point nextLocation)
         {
-            if(nextLocation.X >= size)
+            if (nextLocation.X >= size)
             {
                 nextLocation.X = nextLocation.X - size;
             }
 
-            if(nextLocation.Y >= size)
+            if (nextLocation.Y >= size)
             {
                 nextLocation.Y = nextLocation.Y - size;
             }
@@ -194,6 +196,7 @@ namespace QueensGame
             else
                 return true;
         }
+
         private bool VerifyCell(int i, int j)
         {
             return data[i, j] == 0;
