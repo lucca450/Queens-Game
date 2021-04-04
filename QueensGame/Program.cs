@@ -14,7 +14,7 @@ namespace QueensGame
             switch (mode)
             {
                 case 1:
-                    for (byte i = 1; i < 10; i++)
+                    for (byte i = 1; i <= 10; i++)
                     {
                         Console.WriteLine("Size: " + i);
                         FindAndDrawSolutions(i);
