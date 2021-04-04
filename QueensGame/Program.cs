@@ -8,8 +8,7 @@ namespace QueensGame
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the Queens' Game");
-            byte mode;
-            validateByteInput("Choose mode (1- 1 to 10) or (2- custom): ", out mode);
+            validateByteInput("Choose mode (1- 1 to 10) or (2- custom): ", out byte mode);
 
             switch (mode)
             {
@@ -22,8 +21,7 @@ namespace QueensGame
                     }
                     break;
                 case 2:
-                    byte size;
-                    validateByteInput("Please enter the size of the board: ", out size);
+                    validateByteInput("Please enter the size of the board: ", out byte size);
 
                     bool allSolution = IsAllSolutionsInput();
 
@@ -78,26 +76,6 @@ namespace QueensGame
             }
         }
 
-        private static byte ValidateInputInteger()
-        {
-            byte size;
-            do
-            {
-                Console.WriteLine("Please enter the size of the board:");
-                try
-                {
-                    size = byte.Parse(Console.ReadLine());
-                    break;
-                }
-                catch
-                {
-                    Console.WriteLine("Error - Size must be an integer - Error");
-                }
-            } while (true);
-
-            return size;
-        }
-
         private static void validateByteInput(string message, out byte size)
         {
             do
@@ -113,16 +91,6 @@ namespace QueensGame
             Console.WriteLine();
 
             return allSolution;
-        }
-
-        private static bool ArrayHasValue(int[] array, int value)
-        {
-            foreach (int arrayValue in array)
-            {
-                if (arrayValue == value)
-                    return true;
-            }
-            return false;
         }
     }
 }

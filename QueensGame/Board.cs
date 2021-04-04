@@ -84,12 +84,12 @@ namespace QueensGame
         {
             if (nextLocation.X >= size)
             {
-                nextLocation.X = nextLocation.X - size;
+                nextLocation.X -= size;
             }
 
             if (nextLocation.Y >= size)
             {
-                nextLocation.Y = nextLocation.Y - size;
+                nextLocation.Y -= size;
             }
         }
 
