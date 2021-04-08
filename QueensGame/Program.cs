@@ -8,6 +8,9 @@ namespace QueensGame
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the Queens' Game");
+
+            bool allSolution = IsAllSolutionsInput();
+
             validateByteInput("Choose mode (1- 1 to 10) or (2- custom): ", out byte mode);
 
             switch (mode)
@@ -15,15 +18,13 @@ namespace QueensGame
                 case 1:
                     for (byte i = 1; i <= 10; i++)
                     {
-                        Console.WriteLine("Size: " + i);
-                        FindAndDrawSolutions(i);
+                        Utilities.nbStackOverall = 0;
+                        FindAndDrawSolutions(i, allSolution);
                         Console.WriteLine();
                     }
                     break;
                 case 2:
                     validateByteInput("Please enter the size of the board: ", out byte size);
-
-                    bool allSolution = IsAllSolutionsInput();
 
                     FindAndDrawSolutions(size, allSolution);
                     break;
@@ -38,6 +39,8 @@ namespace QueensGame
 
             b.FindQueensLocations(allSolution);
 
+            Console.WriteLine("Size: " + size);
+
             if (b.solutions.Count == 0)
             {
                 Console.WriteLine("No solution found!");
@@ -48,31 +51,32 @@ namespace QueensGame
             }
         }
 
-        private static void DrawSolutions(List<int[]> solutions)
+        private static void DrawSolutions(Dictionary<int[], int> solutions)
         {
+            Console.WriteLine(Utilities.nbStackOverall + " tuples total");
             int k = 0;
-            foreach (int[] solution in solutions)
+            foreach (KeyValuePair<int[], int> solution in solutions)
             {
                 k++;
                 Console.WriteLine("Solution " + k);
-                foreach (int row in solution)
+                foreach (int row in solution.Key)
                 {
                     Console.Write(row + " ");
                 }
-                Console.WriteLine("\n");
+                Console.WriteLine(": "  + solution.Value + " tuples\n");
 
-                for (int i = 0; i < solution.Length; i++)
+                /*for (int i = 0; i < solution.Key.Length; i++)
                 {
-                    for (int j = 0; j < solution.Length; j++)
+                    for (int j = 0; j < solution.Key.Length; j++)
                     {
-                        if (j + 1 == solution[i])
+                        if (j + 1 == solution.Key[i])
                             Console.Write("1 ");
                         else
                             Console.Write("0 ");
                     }
                     Console.WriteLine();
                 }
-                Console.WriteLine("\n");
+                Console.WriteLine("\n");*/
             }
         }
 

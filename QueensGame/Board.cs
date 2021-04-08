@@ -8,14 +8,14 @@ namespace QueensGame
     {
         private int[,] data;
         private byte size;
-        public List<int[]> solutions { get; }
+        public Dictionary<int[], int> solutions { get; }
         public List<int> solution { get; }
         private bool finished;
 
         public Board(byte size)
         {
             this.size = size;
-            solutions = new List<int[]>();
+            solutions = new Dictionary<int[], int>();
             solution = new List<int>();
             finished = false;
         }
@@ -48,6 +48,7 @@ namespace QueensGame
         {
             if (!finished)
             {
+                Utilities.nbStack++;
                 for (int col = 0; col < size; col++)
                 {
 
@@ -60,7 +61,10 @@ namespace QueensGame
                         {
                             int[] solution_arr = new int[solution.Count];
                             solution.CopyTo(solution_arr);
-                            solutions.Add(solution_arr);
+                            solutions.Add(solution_arr, Utilities.nbStack);
+
+                            Utilities.nbStackOverall += Utilities.nbStack;
+                            Utilities.nbStack = 0;
 
                             if (!allSolutions)
                                 finished = true;
@@ -77,19 +81,6 @@ namespace QueensGame
                         }
                     }
                 }
-            }
-        }
-
-        private void MakeCoordinatesSure(ref Point nextLocation)
-        {
-            if (nextLocation.X >= size)
-            {
-                nextLocation.X -= size;
-            }
-
-            if (nextLocation.Y >= size)
-            {
-                nextLocation.Y -= size;
             }
         }
 

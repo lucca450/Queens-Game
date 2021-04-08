@@ -241,23 +241,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vince\\.nuget\\packages\\": {},
+    "C:\\Users\\Vincent Bellemare\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vince\\OneDrive\\Bureau\\Workspace\\QueensGame\\Queens-Game\\QueensGame\\QueensGame.csproj",
+      "projectUniqueName": "D:\\Users\\Vincent Bellemare\\Desktop\\WorkSpace\\QueensGame\\QueensGame\\QueensGame.csproj",
       "projectName": "QueensGame",
-      "projectPath": "C:\\Users\\vince\\OneDrive\\Bureau\\Workspace\\QueensGame\\Queens-Game\\QueensGame\\QueensGame.csproj",
-      "packagesPath": "C:\\Users\\vince\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vince\\OneDrive\\Bureau\\Workspace\\QueensGame\\Queens-Game\\QueensGame\\obj\\",
+      "projectPath": "D:\\Users\\Vincent Bellemare\\Desktop\\WorkSpace\\QueensGame\\QueensGame\\QueensGame.csproj",
+      "packagesPath": "C:\\Users\\Vincent Bellemare\\.nuget\\packages\\",
+      "outputPath": "D:\\Users\\Vincent Bellemare\\Desktop\\WorkSpace\\QueensGame\\QueensGame\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\vince\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Vincent Bellemare\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -299,22 +299,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[3.1.0, 3.1.0]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[3.1.0, 3.1.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

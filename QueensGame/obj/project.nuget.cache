@@ -1,15 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "92gTD8cOtgS7bHUgLyPhwVhMEOFVU4qJpfPSMD/msIvSZOBbhnTjZS3HRPYt8sUgS/+ha+2/CxSyGby1m+dzOg==",
+  "dgSpecHash": "EhpQI8PIBk8ODVHPpGn7maGupslf6XHE+Bqromot4JNogqdaMjyjPWJ7WYPHeLYAC2jrtMQeh8Oe6QElG2/XOA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vince\\OneDrive\\Bureau\\Workspace\\QueensGame\\Queens-Game\\QueensGame\\QueensGame.csproj",
+  "projectFilePath": "D:\\Users\\Vincent Bellemare\\Desktop\\WorkSpace\\QueensGame\\QueensGame\\QueensGame.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\vince\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\vince\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
-    "C:\\Users\\vince\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
-    "C:\\Users\\vince\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
-    "C:\\Users\\vince\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\vince\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+    "C:\\Users\\Vincent Bellemare\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Vincent Bellemare\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\Vincent Bellemare\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
+    "C:\\Users\\Vincent Bellemare\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
